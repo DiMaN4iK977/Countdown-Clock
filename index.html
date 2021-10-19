@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="google" content="notranslate" />
+    <title>Countdown Clock</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+</head>
+<body>
+
+<h1 class="countdown__title">Countdown Clock</h1>
+<div class="input">
+    <span id="title">Read Countdown time</span>
+    <input type="text" id="input">
+</div>
+<div class="setTimer">
+    <button class="dimension" id="daysValue">Days</button>
+    <button class="dimension" id="hoursValue">Hours</button>
+    <button class="dimension" id="minuteValue">Minutes</button>
+    <button class="dimension" id="secondsValue">Seconds</button>
+</div>
+
+
+
+<div id="countdown" class="countdown">
+    <div class="countdown__item">
+        <div class="days countdown__time"></div>
+        <div class="text">Days</div>
+    </div>
+    <div class="countdown__item">
+        <div class="hours countdown__time"></div>
+        <div class="text">Hours</div>
+    </div>
+    <div class="countdown__item">
+        <div class="minutes countdown__time"></div>
+        <div class="text">Minutes</div>
+    </div>
+    <div class="countdown__item">
+        <div class="seconds countdown__time"></div>
+        <div class="text">Seconds</div>
+    </div>
+</div>
+
+<button class="setTime">Set time</button>
+<button class="startTime">Start</button>
+
+<div class="finish">
+    <div class="finish__title">Время вышло!</div>
+<!--    <img src="reload.png" alt="#">-->
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
